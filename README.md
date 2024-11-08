@@ -1,2 +1,5 @@
-# stings-data
-Particle data release for simulations with the STINGS particle tagging code
+# STINGS Data releases
+
+STINGS stands for Stellar Tags in N-body Galaxy Simulations. The method is described in the following papers:
+
+
