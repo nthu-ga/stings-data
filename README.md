@@ -23,16 +23,24 @@ How to download.
 
 #### Data model
 
+The data are provided in HDF5 format. Each file provides data for a `cutout' around one dark matter halo, including all its satellites. 
+
+The files are organized in the following directory structure:
 ```
- _ Header
-|_ PartType0
-    |_ Coordinates
-    |_ LastTreeIndex
-    |_ Mass
-    |_ ParticleIDs
-    |_ SubgroupNr
-    |_ Velocities
-|_ PartType1    
+/dr1/cutouts/lacey16/3pc/0153/NNNN
+```
+where NNNN is a zero-padded integer ranging from 0000 to 0099. This refers to the index of the halo in the `galaxies.fits' table:
+```
+/dr1/cutouts/lacey16/3pc/0153/galaxies.fits
+```
+
+Filenames are of the form `subhalo_{ID}_153.hdf5` where `{}'
+
+```
+|_ Config
+|_ Header
+|_ Parameters
+|_ PartType4
     |_ Coordinates    
     |_ LastTreeIndex    
     |_ Mass
