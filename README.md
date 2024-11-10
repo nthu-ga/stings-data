@@ -37,28 +37,16 @@ The files are organized in the following directory structure:
 ```
 /dr1/cutouts/lacey16/3pc/0153/NNNN
 ```
-where NNNN is a zero-padded integer ranging from 0000 to 0099. This refers to the index of the halo in the `galaxies.fits' table:
+where NNNN is a zero-padded integer ranging (in principle) from 0000 to 9999. This corresponds to the colum `IDIR` in the `galaxies.fits` table:
 ```
 /dr1/cutouts/lacey16/3pc/0153/galaxies.fits
 ```
 
-Filenames are of the form `subhalo_{ID}_153.hdf5` where `{ID}` is the value of `SUBHALOINDEX` in `galaxies.fits`. 
+Data file names are of the form `subhalo_{SUBHALOINDEX}_153.hdf5` where `{SUBHALOINDEX}` is the value of `SUBHALOINDEX` in `galaxies.fits`. 
 
+The path to the particle data for to a given row in `galaxies.fits` can therefore be constructed as follows:
 ```
-|_ Config
-|_ Header
-|_ Parameters
-|_ PartType4
-   |_ Coordinates
-   |_ DMIDs
-   |_ HSML
-   |_ LookbackFormed
-   |_ Mass
-   |_ Mmetal
-   |_ ParticleIDs 
-   |_ SubhaloNr
-   |_ TPSnapshot
-   |_ Velocities              
+/dr1/cutouts/lacey16/3pc/0153/{IDIR}/subhalo_{SUBHALOINDEX}_153.hdf5
 ```
 
 ### Data Model
@@ -90,6 +78,24 @@ Only central galaxies are included in this table. For central galaxies, many of 
 |`SUB_MBID`| Integar | Coco ParticleID of the most-bound "dark matter" particle assocaited with this subhalo |
 
 #### Particle file contents
+
+The particle file HDF5 layout is:
+```
+|_ Config
+|_ Header
+|_ Parameters
+|_ PartType4
+   |_ Coordinates
+   |_ DMIDs
+   |_ HSML
+   |_ LookbackFormed
+   |_ Mass
+   |_ Mmetal
+   |_ ParticleIDs 
+   |_ SubhaloNr
+   |_ TPSnapshot
+   |_ Velocities              
+```
 
 Each row in the particle datasets corresponds to a "tag" -- equivalent to a star particle in a hydrodynamical simulation, but deriving position and velocity (and subhalo membership) from those of a "parent" N-body particle. Multiple tags (with different ages and metallicites) can be associated with a single N-body particle.
 
