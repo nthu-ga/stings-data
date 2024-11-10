@@ -139,7 +139,7 @@ Stellar mass bound to satellite galaxies can be identified by `(SubhaloNr != SUB
 
 #### Note on stellar evolution
 
-We refer to "oresent-day mass" is the description of the `Mass` and `Mmetal` datasets because the mass of a stellar population changes with time as material is returned to the interstellar medium by winds and supernovae (recycling). The [L16](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L) Galform model assumes instantaneous recycling, i.e. all stellar population (tag) masses refer to long-lived (mostly main-sequence) stars and compact remanants. See Galform papers for details. 
+We refer to "present-day mass" in the description of the `Mass` and `Mmetal` datasets because the mass of a stellar population changes with time as material is returned to the interstellar medium by winds and supernovae (recycling). The [L16](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L) Galform model assumes instantaneous recycling, i.e. all stellar population (tag) masses refer to long-lived (mostly main-sequence) stars and compact remanants. See Galform papers for details. 
 
 For luminosity calculations, it may be necessary to know the intial masses of these stellar populations. In this case, this can be done simply by multiplying the present-day mass by a factor 1/R, where R is the assumed instaneous recycled fraction. 
 
