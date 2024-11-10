@@ -130,7 +130,7 @@ For luminosity calculations, it may be necessary to know the intial masses of th
 
 However, for the [L16](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L) model, this is slightly complicated by the fact that two different initial mass functions (hence values of R) were assumed: a top-heavy IMF in starbursts and a regular (Kennicutt) IMF for quiescent star formation. Unfortunately, the information to track which population formed in which mode is not included in the data for this release.
 
-For the time being, to reasonable approximation, you can just assume the value for the quiescent mode: R = 0.49.
+For the time being, to reasonable approximation, you can just assume the value for the quiescent mode: R = 0.44. This value is stored in the particle data files as the group attribute `Config/GALFORM_RECYCLE_FRACTION`.
 
 #### Example usage
 
