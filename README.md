@@ -66,6 +66,7 @@ Only central galaxies are included in this table. For central galaxies, many of 
 | Column | Unit | Description |
 | -- | -- | -- |
 |`SUBHALOINDEX`| Integer| Zero-based index of the host halo in the simulation group files. Used as a unique label for the host subhalo. |
+|`IDIR`| Integer | Output subdirectory name containing the particle data for this halo |
 |`NTAGS`| - | Number of tags associated with the galaxy |
 |`MSTAR_TAGS`| Msun | Total stellar mass on associated tags |
 |`DHALO_MASS`| Msun | Mass of host DHalo (see Cooper et al. 2025 |
@@ -83,7 +84,6 @@ Only central galaxies are included in this table. For central galaxies, many of 
 |`SUB_VDISP`| km/s | 3-d particle velocity dispersion of all N-body particles in this subhalo (from SubFind) |
 |`SUB_VMAX`| km/s | Rotation curve maximum for all N-body particles in this subhalo (from SubFind) |
 |`SUB_MBID`| Integar | Coco ParticleID of the most-bound "dark matter" particle assocaited with this subhalo |
-|`IDIR`| Integer | Output subdirectory name containing the particle data for this halo |
 
 #### Particle file contents
 
