@@ -56,9 +56,6 @@ Filenames are of the form `subhalo_{ID}_153.hdf5` where `{ID}` is the value of `
 ```
 
 ### Data Model
-
-Each row in the particle datasets corresponds to a "tag" -- equivalent to a star particle in a hydrodynamical simulation, but deriving position and velocity (and subhalo membership) from those of a "parent" N-body particle. Multiple tags (with different ages and metallicites) can be associated with a single N-body particle.
-
 #### Galaxy table
 
 Only central galaxies are included in this table. For central galaxies, many of the columns refer to properties of their host dark matter halo. 
@@ -86,6 +83,9 @@ Only central galaxies are included in this table. For central galaxies, many of 
 |`SUB_MBID`| Integar | Coco ParticleID of the most-bound "dark matter" particle assocaited with this subhalo |
 
 #### Particle file contents
+
+
+Each row in the particle datasets corresponds to a "tag" -- equivalent to a star particle in a hydrodynamical simulation, but deriving position and velocity (and subhalo membership) from those of a "parent" N-body particle. Multiple tags (with different ages and metallicites) can be associated with a single N-body particle.
 
 All units have been convered from simulated $h=1$ quantiteis to $h=0.704$.
 
