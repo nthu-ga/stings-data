@@ -76,7 +76,7 @@ All units have been convered from simulated $h=1$ quantiteis to $h=0.6777$.
 | `TPSnapshot` | Integer | Snapshot of simulation at which tag was assigned | 
 | `Velocities` | km/s | Particle velocities relative to the center of the host halo potential | 
 
-#### Bote on the N-body particle mass
+#### Note on the N-body particle mass
 
 We refer to the simulated particles that are used for the positions and velocities of the tags as "N-body particles". Typically (e.g.  in the data model below) these are also called "dark matter particles", occasionally leading to  confusion about their dynamical mass. In a pure N-body cosmological simulation like Coco, all the particles have a mass $m_p$ such that:
 
