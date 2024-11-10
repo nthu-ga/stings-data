@@ -1,6 +1,6 @@
 # STINGS Particle Tagging Simulation Data Releases
 
-![image](https://github.com/user-attachments/assets/d6367996-cfe6-439f-83c5-1a3d6e5cab84)
+![image](https://github.com/user-attachments/assets/11581f8e-f7eb-42a8-9db4-d795b2f65bf8)
 
 
 STINGS stands for Stellar Tags in N-body Galaxy Simulations. The method is described in the following series of papers:
