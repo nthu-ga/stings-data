@@ -13,9 +13,9 @@ Data for the original C10 models of stellar halos in the Aquarius simulations ca
 
 ---
 
-## COCO / Galform (Cooper et al. 2025) Data Release 1
+## COCO / Galform  Data Release 1
 
-With this paper, we release the stellar particle data for the approximately 6000 central galaxies with virial mass $M_\mathrm{vir} > 10^{10}\,\mathrm{M_\odot}$ in our our fiducial model (based on the semi-analytic model of Lacey et a. 2016, and using $f_{mb} = 3\%$). 
+With Cooper et al. (2025), we release the stellar particle data for approximately 6000 central galaxies in the Coco simulation ([Hellwing et al. 2016](http://adsabs.harvard.edu/abs/2016MNRAS.457.3492H)) with virial mass $M_\mathrm{vir} > 10^{10}\,\mathrm{M_\odot}$ in our our fiducial model (based on the semi-analytic model of [Lacey et al. (2016)](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L), and using $f_{mb} = 3\%$). 
 
 #### Downloading 
 
@@ -141,6 +141,6 @@ Example of reading.
 We kindly request use of these data and references to the underlying models to acknowledge the following:
 
 - Cooper et al. (2025) for any use of the Coco particle tagging data;
-- Hellwing et al. (2016) for the Coco simulations
-- Lacey et al. (2016) in respect of the galaxy formation model used in Cooper et al. (2024)
-- Cooper et al. (2010) and Cooper et al. (2017) in respect of the STINGS particle tagging method;
+- [Hellwing et al. (2016)](http://adsabs.harvard.edu/abs/2016MNRAS.457.3492H)  for the Coco simulations;
+- [Lacey et al. (2016)](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L) in respect of the galaxy formation model used in Cooper et al. (2025);
+- [Cooper et al. (2010)](http://adsabs.harvard.edu/abs/2010MNRAS.406..744C) and [Cooper et al. (2017)](https://ui.adsabs.harvard.edu/abs/2017MNRAS.469.1691C) in respect of the STINGS particle tagging method.
