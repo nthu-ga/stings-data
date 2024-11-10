@@ -36,7 +36,7 @@ where NNNN is a zero-padded integer ranging from 0000 to 0099. This refers to th
 /dr1/cutouts/lacey16/3pc/0153/galaxies.fits
 ```
 
-Filenames are of the form `subhalo_{ID}_153.hdf5` where `{}'
+Filenames are of the form `subhalo_{ID}_153.hdf5` where `{ID}` is the value of `SUBHALOIDX_0B` in `galaxies.fits`. 
 
 ```
 |_ Config
@@ -81,10 +81,8 @@ Potentially useful values stored as attributes in the `/Header` group include;
 - `BoxSize` : the size of the cutout region for this host halo, in Mpc (NOT the size of the Coco simulation box)
 - `GalaxyNumber` : the row number of the central galaxy in the companion `galaxies.fits` table.
 - `HSMLNGB`: the number of neighbours used to calculate the adaptive smoothing scale `HSML` for each particle.
-- `HaloVelBoxFrame`
-- `HubbleParam`
-
-
+- `HaloVelBoxFrame`: the center-of-potential velocity of the halo in the Coco simulation box rest frame.
+- `HubbleParam`: The value of the Hubble parameter assumed in Coco
 
 #### Note on the N-body particle mass
 
