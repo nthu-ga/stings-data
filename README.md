@@ -25,7 +25,7 @@ How to download.
 
 #### File Organization
 
-The data are provided in HDF5 format. Each file provides data for a `cutout' around one dark matter halo, including all its satellites. 
+The data are provided in HDF5 format. Each file provides data for a "cutout" around one dark matter halo, including all its satellites. 
 
 The files are organized in the following directory structure:
 ```
@@ -56,6 +56,7 @@ Filenames are of the form `subhalo_{ID}_153.hdf5` where `{ID}` is the value of `
 ```
 
 ### Data Model
+
 #### Galaxy table
 
 Only central galaxies are included in this table. For central galaxies, many of the columns refer to properties of their host dark matter halo. 
@@ -83,7 +84,6 @@ Only central galaxies are included in this table. For central galaxies, many of 
 |`SUB_MBID`| Integar | Coco ParticleID of the most-bound "dark matter" particle assocaited with this subhalo |
 
 #### Particle file contents
-
 
 Each row in the particle datasets corresponds to a "tag" -- equivalent to a star particle in a hydrodynamical simulation, but deriving position and velocity (and subhalo membership) from those of a "parent" N-body particle. Multiple tags (with different ages and metallicites) can be associated with a single N-body particle.
 
@@ -117,6 +117,10 @@ We refer to the simulated particles that are used for the positions and velociti
 $\frac{(\texttt{Number of particles}) \times m_p} {\texttt{Volume occupied by particles}} = \texttt{Total matter density} = (\Omega_\mathrm{{DM}} + \Omega_\mathrm{{b}}) \rho_\mathrm{crit}$
 
 In other words, the dynamical mass of the N-body particle in the simulation includes both the baryon and dark matter contributions to the matter density. Another way of saying this is that the original N-body simulation treats that baryonic contribution as another form of dark matter.
+
+#### Note on satellites
+
+Stellar mass bound to satellite galaxies can be identified by `(SubhaloNr != SUBHALOIDX) && (SubhaloNr > 0)` where `SUBHALOIDX` is the label for the host halo. We currently do not provide a separate table of satellite galaxy properties.
 
 #### Note on stellar evolution
 
