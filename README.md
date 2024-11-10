@@ -78,7 +78,7 @@ Only central galaxies are included in this table. For central galaxies, many of 
 |`SUB_VEL`| km/s | Center of potential velocity in the Coco simulation box |
 |`SUB_VDISP`| km/s | 3-d particle velocity dispersion of all N-body particles in this subhalo (from SubFind) |
 |`SUB_VMAX`| km/s | Rotation curve maximum for all N-body particles in this subhalo (from SubFind) |
-|`SUB_MBID`| Integar | Coco ParticleID of the most-bound "dark matter" particle assocaited with this subhalo |
+|`SUB_MBID`| Integer | Coco ParticleID of the most-bound "dark matter" particle assocaited with this subhalo |
 
 #### Particle file contents
 
