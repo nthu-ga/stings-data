@@ -23,13 +23,13 @@ With Cooper et al. (2025), we release the stellar particle data for approximatel
 Alongside the particle data, we provide a FITS table of properties for each central galaxy in the release. For each galaxy in that table we provide
 particle data for a cubic region cut out from the original simulation extending to $\pm 1.2 \times R_\mathrm{vir}$.
 
-#### Downloading 
+### Downloading 
 
 The particle data can be found on Zenodo.
 
 How to download.
 
-#### File Organization
+### File Organization
 
 The data are provided in HDF5 format. Each file provides data for a "cutout" around one dark matter halo, including all its satellites. 
 
@@ -138,11 +138,11 @@ However, for the [L16](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L) model,
 
 For the time being, to reasonable approximation, you can just assume the value for the quiescent mode: R = 0.44. This value is stored in the particle data files as the group attribute `Config/GALFORM_RECYCLE_FRACTION`.
 
-#### Example usage
+### Example usage
 
 Example of reading.
 
-#### Acknowledgements
+### Acknowledgements
 
 We kindly request use of these data and references to the underlying models to acknowledge the following:
 
