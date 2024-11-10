@@ -61,7 +61,7 @@ Each row in the particle datasets corresponds to a "tag" -- equivalent to a star
 
 #### File contents
 
-All units have been convered from simulated $h=1$ quantiteis to $h=0.6777$.
+All units have been convered from simulated $h=1$ quantiteis to $h=0.704$.
 
 | Dataset | Unit | Description |  
 | ------- | ---- | ------------|
@@ -75,6 +75,16 @@ All units have been convered from simulated $h=1$ quantiteis to $h=0.6777$.
 | `SubhaloNr` | Integer | ID of subhalo to which tagged DM particle is bound (-1: unbound particles) | 
 | `TPSnapshot` | Integer | Snapshot of simulation at which tag was assigned | 
 | `Velocities` | km/s | Particle velocities relative to the center of the host halo potential | 
+
+Potentially useful values stored as attributes in the `/Header` group include;
+
+- `BoxSize` : the size of the cutout region for this host halo, in Mpc (NOT the size of the Coco simulation box)
+- `GalaxyNumber` : the row number of the central galaxy in the companion `galaxies.fits` table.
+- `HSMLNGB`: the number of neighbours used to calculate the adaptive smoothing scale `HSML` for each particle.
+- `HaloVelBoxFrame`
+- `HubbleParam`
+
+
 
 #### Note on the N-body particle mass
 
