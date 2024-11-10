@@ -64,22 +64,22 @@ Each row in the particle datasets corresponds to a "tag" -- equivalent to a star
 All units have been convered from simulated $h=1$ quantiteis to $h=0.6777$.
 
 |= Dataset =|= Unit =|= Description =|  
-| Coordinates | Mpc | | 
-| DMIDs | Integer | | 
-| HSML | Mpc | | 
-| LookbackFormed | Gyr | | 
-| Mass | Msun | Present-day mass of metals in stellar population tag | 
-| Mmetal | Msun | | 
-| ParticleIDs | Integer | Unique integer ID of stellar population tag | 
-| SubhaloNr | Integer | ID of subhalo to which tagged DM particle is bound (-1: unbound particles) | 
-| TPSnapshot | Integer | Snapshot of simulation at which tag was assigned | 
-| Velocities | km/s | Particle velocities relative to center of potential | 
+| `Coordinates` | Mpc | Particle coordinates relative to the center of the host halo potential | 
+| `DMIDs` | Integer | Coco N-body ("dark matter") particle ID associated with tag | 
+| `HSML` | Mpc | Particle smoothing lengths | 
+| `LookbackFormed` | Gyr | Lookback time at which stellar population tag formed (i.e. stellar population age) | 
+| `Mass` | Msun |  Present-day mass of stellar population tag | 
+| `Mmetal` | Msun | Present-day mass of metals in stellar population tag  | 
+| `ParticleIDs` | Integer | Unique integer ID of stellar population tag | 
+| `SubhaloNr` | Integer | ID of subhalo to which tagged DM particle is bound (-1: unbound particles) | 
+| `TPSnapshot` | Integer | Snapshot of simulation at which tag was assigned | 
+| `Velocities` | km/s | Particle velocities relative to the center of the host halo potential | 
 
 #### A note on the N-body particle mass
 
-We refer to the simulated particles that are used for the positions and velocities of the tags as "N-body particles". Typically (e.g.  in the data model below) these are also called "dark matter particles", occasionally leading to  confusion about their dynamical mass. In a pure N-body cosmological simulation like Coco, all the particles have a mass such that:
+We refer to the simulated particles that are used for the positions and velocities of the tags as "N-body particles". Typically (e.g.  in the data model below) these are also called "dark matter particles", occasionally leading to  confusion about their dynamical mass. In a pure N-body cosmological simulation like Coco, all the particles have a mass $m_p$ such that:
 
-$\frac{(\texttt{Number of particles}) \times (\texttt{Particle mass})}{\texttt{Volume occupied by particles}} = \texttt{Total matter density} = \Omega_\mathrm{{m}}\rho_\mathrm{crit}$
+$\frac{(\texttt{Number of particles}) \times m_p} {\texttt{Volume occupied by particles}} = \texttt{Total matter density} = \Omega_\mathrm{{m}}\rho_\mathrm{crit}$
 
 In other words, the dynamical mass of the N-body particle in the simulation includes both the baryon and dark matter contributions to the matter density. Another way of saying this is that the original N-body simulation treats that baryonic contribution as another form of dark matter.
 
