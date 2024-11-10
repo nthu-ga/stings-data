@@ -76,16 +76,23 @@ All units have been convered from simulated $h=1$ quantiteis to $h=0.6777$.
 | `TPSnapshot` | Integer | Snapshot of simulation at which tag was assigned | 
 | `Velocities` | km/s | Particle velocities relative to the center of the host halo potential | 
 
-#### A note on the N-body particle mass
+#### Bote on the N-body particle mass
 
 We refer to the simulated particles that are used for the positions and velocities of the tags as "N-body particles". Typically (e.g.  in the data model below) these are also called "dark matter particles", occasionally leading to  confusion about their dynamical mass. In a pure N-body cosmological simulation like Coco, all the particles have a mass $m_p$ such that:
 
-$\frac{(\texttt{Number of particles}) \times m_p} {\texttt{Volume occupied by particles}} = \texttt{Total matter density} = \Omega_\mathrm{{m}}\rho_\mathrm{crit}$
+$\frac{(\texttt{Number of particles}) \times m_p} {\texttt{Volume occupied by particles}} = \texttt{Total matter density} = (\Omega_\mathrm{{DM}} + \Omega_\mathrm{{b}}) \rho_\mathrm{crit}$
 
 In other words, the dynamical mass of the N-body particle in the simulation includes both the baryon and dark matter contributions to the matter density. Another way of saying this is that the original N-body simulation treats that baryonic contribution as another form of dark matter.
 
-#### A note on stellar evolution
+#### Note on stellar evolution
 
+We refer to "oresent-day mass" is the description of the `Mass` and `Mmetal` datasets because the mass of a stellar population changes with time as material is returned to the interstellar medium by winds and supernovae (recycling). The Lacey et al. (2016) Galform model assumes instantaneous recycling, i.e. all stellar population (tag) masses refer to long-lived (mostly main-sequence) stars and compact remanants. See Galform papers for details. 
+
+For luminosity calculations, it may be necessary to know the intial masses of these stellar populations. In this case, this can be done simply by multiplying the present-day mass by a factor 1/R, where R is the assumed instaneous recycled fraction. 
+
+However, for the Lacey et al. 2016 model, this is slightly complicated by the fact that two different initial mass functions (hence values of R) were assumed: a top-heavy IMF in starbursts and a regular (Kennicutt) IMF for quiescent star formation. Unfortunately, the information to track which population formed in which mode is not included in the data for this release.
+
+For the time being, to reasonable approximation, you can just assume the value for the quiescent mode: R = 0.49.
 
 #### Example usage
 
