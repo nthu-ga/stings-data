@@ -95,7 +95,7 @@ Example of reading.
 
 We kindly request use of these data and references to the underlying models to acknowledge the following:
 
-- Cooper et al. (2024) for any use of the Coco particle tagging data;
+- Cooper et al. (2025) for any use of the Coco particle tagging data;
 - Hellwing et al. (2016) for the Coco simulations
 - Lacey et al. (2016) in respect of the galaxy formation model used in Cooper et al. (2024)
 - Cooper et al. (2010) and Cooper et al. (2017) in respect of the STINGS particle tagging method;
