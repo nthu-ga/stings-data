@@ -64,7 +64,7 @@ Only central galaxies are included in this table. For central galaxies, many of 
 | -- | -- | -- |
 |`SUBHALOINDEX`| Integer| Zero-based index of the host halo in the simulation group files. Used as a unique label for the host subhalo. |
 |`IDIR`| Integer | Output subdirectory name containing the particle data for this halo |
-|`NTAGS`| - | Number of tags associated with the galaxy |
+|`NTAGS`| Integer | Number of tags associated with the galaxy |
 |`MSTAR_TAGS`| Msun | Total stellar mass on associated tags |
 |`DHALO_MASS`| Msun | Mass of host DHalo (see Cooper et al. 2025 |
 |`DHALO_ISDHALOCENTRE`| Boolean | True if the DHalo is a main/central halo (true for all halos in this data release) |
