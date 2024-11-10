@@ -63,7 +63,8 @@ Each row in the particle datasets corresponds to a "tag" -- equivalent to a star
 
 All units have been convered from simulated $h=1$ quantiteis to $h=0.6777$.
 
-|= Dataset =|= Unit =|= Description =|  
+| Dataset | Unit | Description |  
+| ------- | ---- | ------------|
 | `Coordinates` | Mpc | Particle coordinates relative to the center of the host halo potential | 
 | `DMIDs` | Integer | Coco N-body ("dark matter") particle ID associated with tag | 
 | `HSML` | Mpc | Particle smoothing lengths | 
