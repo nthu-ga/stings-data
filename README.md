@@ -1,4 +1,4 @@
-# STINGS Data releases
+# STINGS Particle Tagging Simulation Data Releases
 
 STINGS stands for Stellar Tags in N-body Galaxy Simulations. The method is described in the following series of papers:
 
@@ -13,7 +13,7 @@ Data for the original C10 models of stellar halos in the Aquarius simulations ca
 
 ---
 
-### COCO / Galform (Cooper et al. 2025) Data Release 1
+## COCO / Galform (Cooper et al. 2025) Data Release 1
 
 Description.
 
