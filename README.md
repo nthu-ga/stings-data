@@ -36,7 +36,7 @@ where NNNN is a zero-padded integer ranging from 0000 to 0099. This refers to th
 /dr1/cutouts/lacey16/3pc/0153/galaxies.fits
 ```
 
-Filenames are of the form `subhalo_{ID}_153.hdf5` where `{ID}` is the value of `SUBHALOIDX_0B` in `galaxies.fits`. 
+Filenames are of the form `subhalo_{ID}_153.hdf5` where `{ID}` is the value of `SUBHALOINDEX` in `galaxies.fits`. 
 
 ```
 |_ Config
@@ -59,7 +59,33 @@ Filenames are of the form `subhalo_{ID}_153.hdf5` where `{ID}` is the value of `
 
 Each row in the particle datasets corresponds to a "tag" -- equivalent to a star particle in a hydrodynamical simulation, but deriving position and velocity (and subhalo membership) from those of a "parent" N-body particle. Multiple tags (with different ages and metallicites) can be associated with a single N-body particle.
 
-#### File contents
+#### Galaxy table
+
+Only central galaxies are included in this table. For central galaxies, many of the columns refer to properties of their host dark matter halo. 
+
+| Column | Unit | Description |
+| -- | -- | -- |
+|`SUBHALOINDEX`| Integer| Zero-based index of the host halo in the simulation group files. Used as a unique label for the host subhalo. |
+|`NTAGS`| - | Number of tags associated with the galaxy |
+|`MSTAR_TAGS`| Msun | Total stellar mass on associated tags |
+|`DHALO_MASS`| Msun | Mass of host DHalo (see Cooper et al. 2025 |
+|`DHALO_ISDHALOCENTRE`| Boolean | True if the DHalo is a main/central halo (true for all halos in this data release) |
+|`DHALO_ISFOFCENTRE`| Boolean | True if the DHalo is derived from the central halo of its friends-of-friends group |
+|`DHALO_MAINBRANCHMAXIMUMNP`| Integer | Maximum number of N-body particles associated with this DHalo along its main branch |
+|`DHALO_MAINBRANCHMAXIMUMVMAX`| km/s | Maximum circular velocity associated with this DHalo along its main branch |
+|`DHALO_PROXY_R200`| Mpc | Effective R200 for this DHalo |
+|`SUB_FOFNR`| Integer | Associated friends-of-friends group | 
+|`SUB_MCRIT200`| Msun | FoF M200 (~virial mass) |
+|`SUB_RCRIT200`| Mpc |  FoF R200 (~virial radius)  |
+|`SUB_COM`| Mpc | Center of mass position in the Coco simulation box |
+|`SUB_POS`| Mpc | Center of potential postion in the Coco simulation box |
+|`SUB_VEL`| km/s | Center of potential velocity in the Coco simulation box |
+|`SUB_VDISP`| km/s | 3-d particle velocity dispersion of all N-body particles in this subhalo (from SubFind) |
+|`SUB_VMAX`| km/s | Rotation curve maximum for all N-body particles in this subhalo (from SubFind) |
+|`SUB_MBID`| Integar | Coco ParticleID of the most-bound "dark matter" particle assocaited with this subhalo |
+|`IDIR`| Integer | Output subdirectory name containing the particle data for this halo |
+
+#### Particle file contents
 
 All units have been convered from simulated $h=1$ quantiteis to $h=0.704$.
 
