@@ -15,7 +15,7 @@ Data for the original C10 models of stellar halos in the Aquarius simulations ca
 
 ## COCO / Galform  Data Release 1
 
-With Cooper et al. (2025), we release the stellar particle data for approximately 6000 central galaxies in the Coco simulation ([Hellwing et al. 2016](http://adsabs.harvard.edu/abs/2016MNRAS.457.3492H)) with virial mass $M_\mathrm{vir} > 10^{10}\,\mathrm{M_\odot}$ in our our fiducial model (based on the semi-analytic model of [Lacey et al. (2016)](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L), and using $f_{mb} = 3\%$). 
+With Cooper et al. (2025), we release the stellar particle data for approximately 6400 central galaxies in the Coco simulation ([Hellwing et al. 2016](http://adsabs.harvard.edu/abs/2016MNRAS.457.3492H)) with virial mass $M_\mathrm{vir} > 10^{10}\,\mathrm{M_\odot}$ in our our fiducial model (based on the semi-analytic model of [Lacey et al. (2016)](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L), and using $f_{mb} = 3\%$). 
 
 #### Downloading 
 
