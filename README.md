@@ -124,11 +124,11 @@ Stellar mass bound to satellite galaxies can be identified by `(SubhaloNr != SUB
 
 #### Note on stellar evolution
 
-We refer to "oresent-day mass" is the description of the `Mass` and `Mmetal` datasets because the mass of a stellar population changes with time as material is returned to the interstellar medium by winds and supernovae (recycling). The Lacey et al. (2016) Galform model assumes instantaneous recycling, i.e. all stellar population (tag) masses refer to long-lived (mostly main-sequence) stars and compact remanants. See Galform papers for details. 
+We refer to "oresent-day mass" is the description of the `Mass` and `Mmetal` datasets because the mass of a stellar population changes with time as material is returned to the interstellar medium by winds and supernovae (recycling). The [L16](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L) Galform model assumes instantaneous recycling, i.e. all stellar population (tag) masses refer to long-lived (mostly main-sequence) stars and compact remanants. See Galform papers for details. 
 
 For luminosity calculations, it may be necessary to know the intial masses of these stellar populations. In this case, this can be done simply by multiplying the present-day mass by a factor 1/R, where R is the assumed instaneous recycled fraction. 
 
-However, for the Lacey et al. 2016 model, this is slightly complicated by the fact that two different initial mass functions (hence values of R) were assumed: a top-heavy IMF in starbursts and a regular (Kennicutt) IMF for quiescent star formation. Unfortunately, the information to track which population formed in which mode is not included in the data for this release.
+However, for the [L16](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L) model, this is slightly complicated by the fact that two different initial mass functions (hence values of R) were assumed: a top-heavy IMF in starbursts and a regular (Kennicutt) IMF for quiescent star formation. Unfortunately, the information to track which population formed in which mode is not included in the data for this release.
 
 For the time being, to reasonable approximation, you can just assume the value for the quiescent mode: R = 0.49.
 
