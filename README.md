@@ -157,7 +157,7 @@ Example of reading.
 
 ### Acknowledgements
 
-We kindly request use of these data and references to the underlying models to acknowledge the following:
+We kindly request use of these data and references to the underlying models to be acknowledged as follows:
 
 - Cooper et al. (2025) for any use of the Coco particle tagging data;
 - [Hellwing et al. (2016)](http://adsabs.harvard.edu/abs/2016MNRAS.457.3492H)  for the Coco simulations;
