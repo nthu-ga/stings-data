@@ -56,7 +56,7 @@ The path to the particle data for to a given row in `galaxies.fits` can therefor
 
 #### Galaxy table
 
-Only central galaxies are included in this table. For central galaxies, many of the columns refer to properties of their host dark matter halo. 
+Only central galaxies are included in this table. For central galaxies, many of the columns refer to properties of their host dark matter halo. Many quantiteis in the underlying simulation and semi-analytic model are stored in 'h-inverse' (i.e. $h=1$) form. The data we provide here convert all such quantities assuming $h=0.704$.
 
 | Column | Unit | Description |
 | -- | -- | -- |
