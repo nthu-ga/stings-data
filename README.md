@@ -105,7 +105,8 @@ The particle file HDF5 layout is:
 
 Each row in the particle datasets corresponds to a "tag" -- equivalent to a star particle in a hydrodynamical simulation, but deriving position and velocity (and subhalo membership) from those of a "parent" N-body particle. Multiple tags (with different ages and metallicites) can be associated with a single N-body particle.
 
-All units have been convered from simulated $h=1$ quantiteis to $h=0.704$.
+> [!NOTE]  
+> As for the `galaxies.fits` table, values in these files assume $h=0.704$.
 
 | Dataset | Unit | Description |  
 | ------- | ---- | ------------|
