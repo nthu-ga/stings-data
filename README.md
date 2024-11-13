@@ -58,7 +58,7 @@ The path to the particle data for to a given row in `galaxies.fits` can therefor
 
 Only central galaxies are included in this table. For central galaxies, many of the columns refer to properties of their host dark matter halo.
 
-> [!INFO]  
+> [!INFORMATION]  
 > Many quantities in the underlying simulation and semi-analytic model are reported assuming $h=1$, and thus require correction to a lower value of $h$ for comparison to observations. In the data we provide here, all such quantities are reported assuming $h=0.704$.
 
 | Column | Unit | Description |
