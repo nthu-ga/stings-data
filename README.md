@@ -28,7 +28,7 @@ particle data for a cubic region cut out from the original simulation extending 
 
 ### Downloading 
 
-The particle data is on Zenodo: https://doi.org/10.5281/zenodo.14127086
+The particle data can be downloaded from the following Zenodo repository: https://doi.org/10.5281/zenodo.14127086
 
 The full dataset is approximately 70GB. Files are grouped into 13 `tar.gz` "batches" of 5-7 GB each. Each tarfile unpacks to the directory structure described below.
 
