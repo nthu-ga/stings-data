@@ -23,14 +23,14 @@ Data for the original C10 models of stellar halos in the Aquarius simulations ca
 
 With Cooper et al. (2025), we release the stellar particle data for approximately 6400 central galaxies in the Coco simulation ([Hellwing et al. 2016](http://adsabs.harvard.edu/abs/2016MNRAS.457.3492H)) with virial mass $M_\mathrm{vir} > 10^{10}\,\mathrm{M_\odot}$ in our our fiducial model (based on the semi-analytic model of [Lacey et al. (2016)](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L), and using $f_{mb} = 3\%$). 
 
-Alongside the particle data, we provide a FITS table of properties for each central galaxy in the release. For each galaxy in that table we provide
+Alongside the particle data, we provide a `galaxies.fits` FITS table with properties for each central galaxy in the release. For each galaxy in that table, we provide
 particle data for a cubic region cut out from the original simulation extending to $\pm 1.2 \times R_\mathrm{vir}$.
 
 ### Downloading 
 
-The particle data can be found on Zenodo.
+The particle data is on Zenodo: https://doi.org/10.5281/zenodo.14127086
 
-How to download.
+The full dataset is approximately 70GB. Files are grouped into 13 `tar.gz` "batches" of 5-7 GB each. Each tarfile unpacks to the directory structure described below.
 
 ### File Organization
 
