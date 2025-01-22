@@ -153,7 +153,7 @@ For the time being, to reasonable approximation, you can just assume the value f
 
 ### Example usage
 
-A very simple Jupyter notebook, `notebooks/dr1/dr1_example.ipynb`, shows how to identify galaxies of interest and read the particle data.
+A very simple Jupyter notebook, `notebooks/dr1/dr1_example.ipynb` ([link](/notebooks/dr1/dr1_example.ipynb)), shows how to identify galaxies of interest and read the particle data with [h5py](https://www.h5py.org/).
 
 ### Acknowledgements
 
