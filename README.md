@@ -10,7 +10,7 @@ STINGS stands for Stellar Tags in N-body Galaxy Simulations. The method is descr
 - [Cooper et al. (2015)](https://ui.adsabs.harvard.edu/abs/2015MNRAS.451.2703C)
 - [Cooper et al. (2017)](https://ui.adsabs.harvard.edu/abs/2017MNRAS.469.1691C)
 
-This repository documents publically released data produced with STINGS, starting with the COCO simulations of Cooper et al. (2025). 
+This repository documents publically released data produced with STINGS, starting with the COCO simulations of [Cooper et al. (2025)](https://arxiv.org/abs/2501.13317). 
 
 Data for the original C10 models of stellar halos in the Aquarius simulations can be found at https://github.com/nthu-ga/aquarius-halos.
 
