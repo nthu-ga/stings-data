@@ -159,7 +159,7 @@ For the time being, to reasonable approximation, you can just assume the value f
 
 We kindly request use of these data and references to the underlying models to be acknowledged as follows:
 
-- Cooper et al. (2025) for any use of the Coco particle tagging data;
+- [Cooper et al. (2025)](https://arxiv.org/abs/2501.13317) for any use of the Coco particle tagging data;
 - [Hellwing et al. (2016)](http://adsabs.harvard.edu/abs/2016MNRAS.457.3492H)  for the Coco simulations;
 - [Lacey et al. (2016)](http://adsabs.harvard.edu/abs/2016MNRAS.462.3854L) in respect of the galaxy formation model used in Cooper et al. (2025);
 - [Cooper et al. (2010)](http://adsabs.harvard.edu/abs/2010MNRAS.406..744C) and [Cooper et al. (2017)](https://ui.adsabs.harvard.edu/abs/2017MNRAS.469.1691C) in respect of the STINGS particle tagging method.
