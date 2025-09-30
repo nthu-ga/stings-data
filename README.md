@@ -60,7 +60,7 @@ A very simple Jupyter notebook, `notebooks/dr1/dr1_example.ipynb` ([link](/noteb
 Only central galaxies are included in this table. For central galaxies, many of the columns refer to properties of their host dark matter halo.
 
 > [!NOTE]  
-> Many quantities in the underlying simulation and semi-analytic model are reported assuming a Hubble parameter $h=1$, and thus require correction to a lower value of $h$ for comparison to observations. In the data we provide here, all such quantities are reported assuming $h=0.704$.
+> Many quantities in the underlying simulation and semi-analytic model assume a Hubble parameter $h=1$, and thus require correction to a lower value of $h$ for comparison to observations. In the data we provide here, all such quantities have been rescaled to $h=0.704$.
 
 | Column | Unit | Description |
 | -- | -- | -- |
